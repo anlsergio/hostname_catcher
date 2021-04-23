@@ -53,4 +53,4 @@ ns3.p31.dynect.net.
 
 ## Disclaimer
 
-This simple app was made as an exercise from the DevBook course.
+This simple app was made as an exercise while learning Golang.
