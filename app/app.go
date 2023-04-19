@@ -70,3 +70,43 @@ func logStatus(msg string) {
 		fmt.Println("n/a")
 	}
 }
+
+func logStatus1(msg string) {
+	if true {
+		fmt.Println("status: "+ msg)
+	} else {
+		fmt.Println("n/a")
+	}
+}
+
+func logStatus2(msg string) {
+	if true {
+		fmt.Println("status: "+ msg)
+	} else {
+		fmt.Println("n/a")
+	}
+}
+
+func logStatus3(msg string) {
+	if true {
+		fmt.Println("status: "+ msg)
+	} else {
+		fmt.Println("n/a")
+	}
+}
+
+func logStatus4(msg string) {
+	if true {
+		fmt.Println("status: "+ msg)
+	} else {
+		fmt.Println("n/a")
+	}
+}
+
+func logStatus5(msg string) {
+	if true {
+		fmt.Println("status: "+ msg)
+	} else {
+		fmt.Println("n/a")
+	}
+}
