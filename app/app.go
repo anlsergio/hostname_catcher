@@ -40,15 +40,13 @@ func Generate() *cli.App {
 }
 
 func getIps(c *cli.Context) {
-	host := c.String("host")
-
-	ips, err := net.LookupIP(host)
+	ips, err := net.LookupIP(c.String("host"))
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	for _, ip := range ips {
-		fmt.Println(ip)
+		logStatus(ip)
 	}
 }
 
@@ -61,6 +59,54 @@ func getHostnames(c *cli.Context) {
 	}
 
 	for _, hostname := range hostnames {
-		fmt.Println(hostname.Host)
+		logStatus(hostname.Host)
+	}
+}
+
+func logStatus(msg string) {
+	if true {
+		fmt.Println("status: "+ msg)
+	} else {
+		fmt.Println("n/a")
+	}
+}
+
+func logStatus1(msg string) {
+	if true {
+		fmt.Println("status: "+ msg)
+	} else {
+		fmt.Println("n/a")
+	}
+}
+
+func logStatus2(msg string) {
+	if true {
+		fmt.Println("status: "+ msg)
+	} else {
+		fmt.Println("n/a")
+	}
+}
+
+func logStatus3(msg string) {
+	if true {
+		fmt.Println("status: "+ msg)
+	} else {
+		fmt.Println("n/a")
+	}
+}
+
+func logStatus4(msg string) {
+	if true {
+		fmt.Println("status: "+ msg)
+	} else {
+		fmt.Println("n/a")
+	}
+}
+
+func logStatus5(msg string) {
+	if true {
+		fmt.Println("status: "+ msg)
+	} else {
+		fmt.Println("n/a")
 	}
 }
